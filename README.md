@@ -100,7 +100,7 @@ Something unclear or plain wrong? Say so on [Discord](https://discord.gg/GUdBNfX
 
 ## This is an alpha 🌱
 
-TeaTalk is early and built in the open. Expect rough edges, expect things to change, and expect the occasional bug — "early and honest" is the point, not "flawless." Version `v0.1.0-alpha.1`.
+TeaTalk is early and built in the open. Expect rough edges, expect things to change, and expect the occasional bug — "early and honest" is the point, not "flawless." Version `v0.1.0-alpha.3`.
 
 **Built in the open on [Discord](https://discord.gg/GUdBNfXfbe).** It's just getting started — so the feedback you leave now is the feedback that steers what ships. Come say hi.
 
