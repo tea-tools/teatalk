@@ -73,6 +73,24 @@ Any API keys you add are **encrypted on your PC** (Windows DPAPI) and never leav
 
 ---
 
+## Docs
+
+The same docs that ship inside the download, readable here first.
+
+| If you want to… | Read |
+|---|---|
+| Install it, connect it to VRChat, get your first line into the chatbox | [Getting started](docs/getting-started.md) |
+| Understand the Home screen — appearance, audio, ambient, OSC, modules, privacy | [The hub](docs/the-hub.md) |
+| Fix the app not starting, OSC not connecting, or a mic that isn't heard | [Troubleshooting](docs/troubleshooting.md) |
+| Know exactly what leaves your PC and what doesn't | [Privacy](docs/PRIVACY.md) |
+
+**TeaTalk** — the translation module, in depth:
+[start here](docs/teatalk/getting-started.md) · [full guide](docs/teatalk/guide.md) · [every setting](docs/teatalk/settings-reference.md) · [talking while muted](docs/teatalk/staying-muted.md) · [troubleshooting](docs/teatalk/troubleshooting.md)
+
+Something unclear or plain wrong? Say so on [Discord](https://discord.gg/GUdBNfXfbe) — the docs are alpha too.
+
+---
+
 ## Privacy, honestly
 
 - On the **default path, your voice is turned into text on your own PC** and isn't shipped to a server. (If you opt into a cloud speech engine, audio does leave your PC — that's your choice.)
@@ -84,7 +102,7 @@ Any API keys you add are **encrypted on your PC** (Windows DPAPI) and never leav
 
 ## This is an alpha 🌱
 
-TeaTalk is early and built in the open. Expect rough edges, expect things to change, and expect the occasional bug — "early and honest" is the point, not "flawless."
+TeaTalk is early and built in the open. Expect rough edges, expect things to change, and expect the occasional bug — "early and honest" is the point, not "flawless." Version `v0.1.0-alpha.3`.
 
 **Built in the open on [Discord](https://discord.gg/GUdBNfXfbe).** It's just getting started — so the feedback you leave now is the feedback that steers what ships. Come say hi.
 
