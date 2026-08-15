@@ -7,7 +7,7 @@
 ![Status: Alpha](https://img.shields.io/badge/status-alpha-orange)
 ![Platform: Windows x64](https://img.shields.io/badge/platform-Windows%20x64-blue)
 ![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-lightgrey)
-![Latest release](https://img.shields.io/github/v/release/vaniteav/teatalk?include_prereleases)
+![Latest release](https://img.shields.io/github/v/release/tea-tools/teatalk?include_prereleases)
 
 `Free to use · No account · Windows`
 
