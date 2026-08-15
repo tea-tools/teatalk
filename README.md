@@ -35,7 +35,7 @@ It works the first time you open it. Nothing to sign up for, nothing to pay.
 
 ## Download
 
-**[⬇️ Get the latest alpha build → github.com/vaniteav/teatalk/releases](https://github.com/vaniteav/teatalk/releases)**
+**[⬇️ Get the latest alpha build → github.com/tea-tools/teatalk/releases](https://github.com/tea-tools/teatalk/releases)**
 
 1. Download and unzip anywhere (your Desktop is fine).
 2. Run the app — nothing else to install.
