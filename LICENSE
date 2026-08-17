@@ -1,15 +1,19 @@
 TeaTools licensing at a glance
 ------------------------------
-This file (PolyForm Noncommercial 1.0.0) covers the HUB: TeaTools.Core,
-TeaTools.UI, and TeaTools.App.
+This repository holds the TeaTalk download page and its documentation —
+this file, README.md, and the docs/ and images/ folders. This file
+(PolyForm Noncommercial 1.0.0) covers that content, and it is also the
+license the TeaTools application you download from Releases ships under.
 
-The MODULE CONTRACT SURFACE is separately licensed under Apache-2.0 so
-module authors can build — and sell — modules freely:
-  - TeaTools.Plugin.SDK   (see src/TeaTools.Plugin.SDK/LICENSE)
-  - TeaTools.UI.Kit       (same terms, when the package ships)
+NO SOURCE CODE LIVES HERE. For the code and its licensing — including
+the MODULE CONTRACT SURFACE (TeaTools.Plugin.SDK and TeaTools.UI.Kit),
+which is separately licensed under Apache-2.0 so module authors can
+build, and sell, modules freely — see the hub repository:
 
-A module you write links only against the Apache-2.0 packages. The hub
-license never applies to your module or its sale.
+  https://github.com/tea-tools/teatools
+
+A module you write links only against the Apache-2.0 packages. The
+license in this file never applies to your module or its sale.
 ------------------------------
 
 Required Notice: Copyright Vanitea (https://github.com/vaniteav)
