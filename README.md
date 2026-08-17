@@ -65,7 +65,7 @@ Add your own [OpenRouter](https://openrouter.ai/) API key and translation stops 
 - **Links and @mentions survive** — URLs and @handles are set aside before translation and restored after, so they always come through intact.
 - **Your model, your settings** — choose any OpenRouter model and tune how literal it is (deterministic by default).
 
-Any API keys you add are **encrypted on your PC** (Windows DPAPI) and never leave it. You never need a key to use TeaTalk.
+Any API keys you add never leave your PC. They're **encrypted there** with Windows' own protection (DPAPI) — or saved as plain text when Windows can't encrypt them, which TeaTools does rather than lose your key ([what that means](docs/teatalk/settings-reference.md#notes-on-storage)). You never need a key to use TeaTalk.
 
 *Provider names (Whisper, Microsoft Edge, Google, OpenRouter, VRChat) describe what TeaTalk connects to — not endorsements or partnerships.*
 
