@@ -6,7 +6,7 @@
 
 ![Status: Alpha](https://img.shields.io/badge/status-alpha-orange)
 ![Platform: Windows x64](https://img.shields.io/badge/platform-Windows%20x64-blue)
-![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-lightgrey)
+![App license: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/app%20license-PolyForm%20Noncommercial%201.0.0-lightgrey)
 ![Latest release](https://img.shields.io/github/v/release/tea-tools/teatalk?include_prereleases)
 
 `Free to use · No account · Windows`
@@ -112,4 +112,4 @@ If something breaks, there's a **"Report a problem"** button right in the app �
 
 ## License
 
-TeaTalk is part of **TeaTools** (TeaTalk is the translation module; the app is the hub). It's released under the **PolyForm Noncommercial 1.0.0** license — free to use, not open-source-for-commercial-use. See [`LICENSE`](LICENSE) for details.
+TeaTalk is part of **TeaTools** (TeaTalk is the translation module; the app is the hub). The TeaTools app is released under the **PolyForm Noncommercial 1.0.0** license — free to use, not open-source-for-commercial-use. The module SDK and UI kit are Apache-2.0, so a module you build against them stays yours to license and sell. See [`LICENSE`](LICENSE) for details.
