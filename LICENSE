@@ -10,7 +10,7 @@ the MODULE CONTRACT SURFACE (TeaTools.Plugin.SDK and TeaTools.UI.Kit),
 which is separately licensed under Apache-2.0 so module authors can
 build, and sell, modules freely — see the hub repository:
 
-  https://github.com/tea-tools/teatools
+  https://teatools-vrc.com
 
 A module you write links only against the Apache-2.0 packages. The
 license in this file never applies to your module or its sale.
