@@ -110,4 +110,4 @@ If something breaks, there's a **"Report a problem"** button right in the app �
 
 ## License
 
-TeaTalk is part of **TeaTools** (TeaTalk is the translation module; the app is the hub). It's released under the **PolyForm Noncommercial 1.0.0** license — free to use, not open-source-for-commercial-use. See [`LICENSE`](LICENSE) for details.
+TeaTalk is part of **TeaTools** (TeaTalk is the translation module; the app is the hub). The TeaTools app is released under the **PolyForm Noncommercial 1.0.0** license — free to use, not open-source-for-commercial-use. The module SDK and UI kit are Apache-2.0, so a module you build against them stays yours to license and sell. See [`LICENSE`](LICENSE) for details.
