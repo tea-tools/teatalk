@@ -7,6 +7,7 @@
 ![Status: Alpha](https://img.shields.io/badge/status-alpha-orange)
 ![Platform: Windows x64](https://img.shields.io/badge/platform-Windows%20x64-blue)
 ![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-lightgrey)
+![Latest release](https://img.shields.io/github/v/release/tea-tools/teatalk?include_prereleases)
 
 `Free to use · No account · Windows`
 
@@ -28,6 +29,7 @@ It works the first time you open it. Nothing to sign up for, nothing to pay.
 - 🧠 **Translation that follows the conversation.** Bring your own OpenRouter key and TeaTalk carries context between lines — pronouns, follow-ups, and names stay consistent instead of each sentence being translated cold. (The free path needs no key.)
 - 🎨 **Actually designed.** A soft "Pastel Glass" interface, light and dark themes, and one consistent style across every module — an OSC tool that feels like it belongs in VRChat.
 - 🔀 **Translate or transcribe.** Post your words in another language, or caption your own speech as-is. One click to switch.
+- 💬 **Live captions (opt-in preview).** Watch your words appear in the chatbox as you speak, before the finished translation lands. Off by default — turn it on in **Chatbox** settings. It's a preview, so expect rough edges.
 - 🌐 **Auto-detects your language.** Just talk — TeaTalk figures out what you're speaking. Prefer to pin one language? Pick it, and local recognition gets faster.
 - 📝 **Reads the way you want.** Show the original first, the translation first, or translation only.
 
