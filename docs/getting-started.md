@@ -8,7 +8,7 @@ TeaTools ships as a self-contained Windows build — you don't need to install .
 
 1. Unzip the TeaTools folder anywhere.
 2. Run `TeaTools.App.exe`.
-3. The app opens its window and also places an icon in your **system tray** — right-click it for quick actions and to quit. Closing the window leaves it running in the tray.
+3. The app opens its window and also places an icon in your **system tray** — right-click it for quick actions and to quit. By default, closing the window (✕) quits TeaTools; turn on **Minimize to system tray** (Home → General → System) if you'd rather closing hide it to the tray instead. See [the hub reference](the-hub.md#under-the-hood) for details.
 
 TeaTools is **single-instance**: launching it again just focuses the copy that's already running, so you can't accidentally run two.
 
@@ -25,11 +25,11 @@ You do this once; VRChat remembers it. TeaTools finds VRChat automatically (via 
 The hub does nothing user-visible on its own — features come from **modules**, and they all ship **disabled** so nothing runs uninvited.
 
 1. Open the **Modules** tab on the Home screen.
-2. You'll see the installed modules as cards. TeaTools ships with **TeaTalk** (speech → chatbox).
+2. You'll see your modules as cards. TeaTools ships with **TeaTalk**, its first module (speech → chatbox).
 3. Toggle a module on. The choice is saved and applied immediately — no restart.
 4. The module appears in the left rail; click it to open its panel.
 
-From here, set up the one you enabled — see the [TeaTalk docs](teatalk/README.md) for the module that ships with TeaTools.
+From here, set up the one you enabled — see the [TeaTalk docs](teatalk/README.md) for TeaTools' first module.
 
 ## Set your microphone (once, shared by every module)
 
@@ -43,7 +43,7 @@ Everything lives under `%APPDATA%\TeaTools\`:
 
 | Path | What's there |
 |---|---|
-| `logs\teatools.log` | The app log — the first place to look when something's wrong |
+| `logs\` | The app log, one dated file per day (`teatools20260821.log`) — the first place to look when something's wrong |
 | `modules.json` | Which modules you've enabled |
 | `plugins\` | Installed catalog modules |
 | `data\` | Per-module saved settings |

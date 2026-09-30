@@ -36,15 +36,30 @@ your VRChat mute state:
 
 | Setting | What it does to *spoken* transcription |
 |---|---|
-| **Pause transcribing** *(default)* | Stops transcribing while your VRChat mic is muted. Resumes when you unmute. |
+| **Pause transcribing** *(default)* | Holds spoken output from a line that begins while your VRChat mic is muted. After TeaTools has connected to VRChat at least once in this session, it also holds output from a line that begins while TeaTools cannot confirm your mute state. |
 | **Ignore mute** | Keeps transcribing no matter your VRChat mute state. |
 
 If you want to **speak while muted and see the text in chatbox**, choose
-**Ignore mute**. On the default "Pause transcribing," transcription stops while you're
-muted — which is why it can feel like "my mic has to be on."
+**Ignore mute**. On the default **Pause transcribing**, TeaTalk holds spoken
+output while you're muted — which is why it can feel like "my mic has to be on."
 
-> "Ignore mute" only changes whether TeaTalk keeps *transcribing*. It never
-> makes your voice transmit — that's still VRChat's mute doing its job.
+**"Pause transcribing" also holds spoken output when your mute state is unclear**,
+not just when you're confirmed muted — this is deliberate: TeaTools would rather
+stay silent than guess wrong. After TeaTools has connected to VRChat at least once,
+you'll see the persistent **“Mute state unknown — paused to be safe”** warning with
+a **Check OSC** action whenever this is why nothing's coming through. It clears when
+VRChat confirms your state again. TeaTalk automatically rechecks a temporarily
+unavailable mute reading while VRChat remains discoverable; if VRChat's OSC service
+disappears, it keeps spoken output held until discovery returns. Before TeaTools has
+connected to VRChat for the first time, speaking works normally.
+
+> **Ignore mute** changes whether TeaTalk holds spoken output for the VRChat mute
+> state. It never makes your voice transmit — that's still VRChat's mute doing its
+> job.
+
+TeaTalk does not show a separate on-screen notice for every spoken line held by a
+confirmed mute. The unavailable-state warning above is the on-screen signal when
+TeaTalk cannot establish a current mute state.
 
 ## How certain do you want to be?
 

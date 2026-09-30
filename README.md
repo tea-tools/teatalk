@@ -4,7 +4,7 @@
 
 **Real-time speech translation for VRChat.** You talk normally; the people around you read it in their language, right in the in-game chatbox — while you keep talking.
 
-![Status: Alpha](https://img.shields.io/badge/status-alpha-orange)
+![Status: Beta](https://img.shields.io/badge/status-beta-blue)
 ![Platform: Windows x64](https://img.shields.io/badge/platform-Windows%20x64-blue)
 ![App license: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/app%20license-PolyForm%20Noncommercial%201.0.0-lightgrey)
 ![Latest release](https://img.shields.io/github/v/release/tea-tools/teatalk?include_prereleases)
@@ -17,7 +17,7 @@
 
 You join a world, someone says hi in a language you don't speak, and you just... answer. You speak normally into your mic. A beat later, your words land in the VRChat chatbox in their language — no menus, no stopping mid-sentence, no copy-pasting into another window. Flip to transcribe mode and it captions your own voice instead, clean and live.
 
-It works the first time you open it. Nothing to sign up for, nothing to pay.
+The local speech-recognition path needs no account or API key. Enable TeaTalk, select your microphone, and approve the local model download when prompted before you start listening.
 
 ---
 
@@ -37,13 +37,13 @@ It works the first time you open it. Nothing to sign up for, nothing to pay.
 
 ## Download
 
-**[⬇️ Get the latest alpha build → github.com/tea-tools/teatalk/releases](https://github.com/tea-tools/teatalk/releases)**
+**[Download TeaTools v0.1.0-beta.1 for Windows x64](https://github.com/tea-tools/teatalk/releases/download/v0.1.0-beta.1/TeaTools-beta.zip)** — signed portable ZIP, 84.85 MB. [Release notes](https://github.com/tea-tools/teatalk/releases/tag/v0.1.0-beta.1).
 
 1. Download and unzip anywhere (your Desktop is fine).
-2. Run the app — nothing else to install.
+2. Close an older running copy, then run TeaTools.App.exe. No installation is needed. This portable build is updated by downloading and extracting a newer release.
 3. In VRChat, enable OSC: **Action Menu (R) → Options → OSC → Enabled.** TeaTalk finds VRChat automatically once OSC is on.
 
-> **First launch:** Windows may show a SmartScreen notice because the app isn't code-signed yet — click **More info → Run anyway.** (Alpha; signing comes later.)
+> **First launch:** a new signed build can still receive a Windows reputation warning. Download only from the official release page and check the publisher before deciding whether to run it.
 
 **You'll need:** Windows (64-bit) · VRChat with OSC enabled · a microphone.
 
@@ -54,7 +54,7 @@ It works the first time you open it. Nothing to sign up for, nothing to pay.
 The **default path is free and runs on your machine:**
 
 - **Speech → text** happens **on your PC** with local Whisper. Your voice audio isn't sent to a server on this path.
-- **Translation** uses free, keyless engines (Microsoft Edge, falling back to Google automatically if the Edge endpoint hiccups) — so a dropped call doesn't drop your line.
+- **Translation** uses free, keyless engines (Microsoft Edge, falling back to Google automatically if the Edge endpoint hiccups) — fallback can also fail.
 
 That's the whole free path. No account, no key, no catch.
 
@@ -67,7 +67,7 @@ Add your own [OpenRouter](https://openrouter.ai/) API key and translation stops 
 - **Links and @mentions survive** — URLs and @handles are set aside before translation and restored after, so they always come through intact.
 - **Your model, your settings** — choose any OpenRouter model and tune how literal it is (deterministic by default).
 
-Any API keys you add never leave your PC. They're **encrypted there** with Windows' own protection (DPAPI) — or saved as plain text when Windows can't encrypt them, which TeaTools does rather than lose your key ([what that means](docs/teatalk/settings-reference.md#notes-on-storage)). You never need a key to use TeaTalk.
+API keys are sent to their selected provider when making authenticated requests. They're **encrypted there** with Windows' own protection (DPAPI) — or saved as plain text when Windows can't encrypt them, which TeaTools does rather than lose your key ([what that means](docs/teatalk/settings-reference.md#notes-on-storage)). You never need a key to use TeaTalk.
 
 *Provider names (Whisper, Microsoft Edge, Google, OpenRouter, VRChat) describe what TeaTalk connects to — not endorsements or partnerships.*
 
@@ -87,7 +87,7 @@ The same docs that ship inside the download, readable here first.
 **TeaTalk** — the translation module, in depth:
 [start here](docs/teatalk/getting-started.md) · [full guide](docs/teatalk/guide.md) · [every setting](docs/teatalk/settings-reference.md) · [talking while muted](docs/teatalk/staying-muted.md) · [troubleshooting](docs/teatalk/troubleshooting.md)
 
-Something unclear or plain wrong? Say so on [Discord](https://discord.gg/GUdBNfXfbe) — the docs are alpha too.
+Something unclear or plain wrong? Say so on [Discord](https://discord.gg/GUdBNfXfbe) — the docs are beta too.
 
 ---
 
@@ -95,18 +95,18 @@ Something unclear or plain wrong? Say so on [Discord](https://discord.gg/GUdBNfX
 
 - On the **default path, your voice is turned into text on your own PC** and isn't shipped to a server. (If you opt into a cloud speech engine, audio does leave your PC — that's your choice.)
 - **Translation** text goes to whichever engine you've picked (Edge/Google on the free path, or OpenRouter if you bring a key).
-- **Respect-VRChat-mute is on by default:** while you're muted in-world, TeaTalk transcribes nothing.
-- **Diagnostics are opt-in — nothing is sent unless you choose to.** If you use the in-app "Report a problem" button, it sends what you write, plus TeaTools' own logs and settings (never your API keys) and basic system info — your app version, your Windows version, and the time. No account or identifier is attached. We don't call it "anonymous," though: those logs can include file paths from your PC, and we'd rather be precise about your privacy than oversell it.
+- **Respect-VRChat-mute is on by default:** TeaTalk follows its configured mute policy; see the [mute guide](docs/teatalk/staying-muted.md) for capture and output behavior.
+- **Diagnostics are available in this beta:** automatic crash uploads follow your consent setting; sending a problem report is an explicit action. Reports may contain diagnostic logs, settings and file paths. See the [privacy guide](docs/PRIVACY.md).
 
 ---
 
-## This is an alpha 🌱
+## This is a beta 🌱
 
 TeaTalk is early and built in the open. Expect rough edges, expect things to change, and expect the occasional bug — "early and honest" is the point, not "flawless." The current version is always the newest one on the [releases page](https://github.com/tea-tools/teatalk/releases).
 
 **Built in the open on [Discord](https://discord.gg/GUdBNfXfbe).** It's just getting started — so the feedback you leave now is the feedback that steers what ships. Come say hi.
 
-If something breaks, there's a **"Report a problem"** button right in the app — it's the fastest way to help fix it.
+If something breaks, collect the app log and the steps that reproduce it. Check logs before sharing them.
 
 ---
 

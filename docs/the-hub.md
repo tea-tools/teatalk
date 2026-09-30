@@ -18,8 +18,7 @@ Hub-wide settings, shared by every module.
 This is the single microphone every listening module uses (TeaTalk today; more later). Setting it here means you configure your mic **once**, not in each module.
 
 - **Microphone** — the capture device shared by all modules.
-- **Sensitivity** — the threshold that separates your speech from room noise. Drag the marker or use the slider; a quieter voice needs a lower threshold. Watch the level meter as you talk — it should jump on speech and sit still in silence.
-- **Silence gap** — how many milliseconds of quiet end a spoken phrase.
+- **Microphone level** — shows the live input level. TeaTalk's built-in speech detection is automatic; there is no sensitivity or silence-gap adjustment.
 
 ### Ambient listening
 
@@ -42,11 +41,13 @@ Your installed modules, each as a card with an on/off toggle.
 - **Open a module** by clicking its row (or its entry in the left rail) — that's where the module's own controls live.
 - Each module runs **isolated** from the hub and from other modules, so if one fails it doesn't take TeaTools down with it.
 
-TeaTools ships with **TeaTalk** preinstalled (disabled until you enable it). Additional modules — ambient chatbox status, haptics, and more — arrive through the module catalog after alpha.
+**TeaTalk** is the hub's flagship first module, and it ships with TeaTools. Like every module it starts switched off until you turn it on here. Additional modules — ambient chatbox status, haptics, and more — arrive through the module catalog after alpha.
 
 ## Developers
 
-A read-only surface pointing developers toward building their own modules against the hub. If that's you, developer/module-author docs aren't part of this public docs set yet — ask on the **[TeaTools Discord](https://discord.gg/GUdBNfXfbe)**.
+A read-only surface for people who want to build their own modules against the hub. It lays out the module contract — what TeaTools owns (the OSC connection, VRChat discovery, chatbox arbitration, and module lifecycle) versus what a module author controls (their own UI, OSC handlers, and manifest) — plus the primitive kit and SDK a module is built from, and how licensing works for authors.
+
+Nothing here needs configuring; it's a preview of what module authoring will look like. If that's you, developer/module-author docs aren't part of this public docs set yet — ask on the **[TeaTools Discord](https://discord.gg/GUdBNfXfbe)**.
 
 ## About
 
@@ -55,7 +56,7 @@ A read-only surface pointing developers toward building their own modules agains
 ## Under the hood
 
 - **Single instance** — a system-wide lock (`Global\TeaTools.Hub`) means only one TeaTools runs at a time; launching again focuses the existing window.
-- **System tray** — TeaTools stays in the tray when you close the window; right-click for actions and to quit.
-- **Logs** — `%APPDATA%\TeaTools\logs\teatools.log`.
+- **System tray** — TeaTools puts an icon in the tray; right-click it for actions and to quit. **Closing the window quits TeaTools** — that's the default, so the window's close button (✕) really does shut the app down rather than leaving it running out of sight. If you'd rather it keep running in the background, turn on **Minimize to system tray** under General → System: with that on, closing the window hides it to the tray and you quit from the tray icon instead.
+- **Logs** — `%APPDATA%\TeaTools\logs`, one dated file per day (`teatools20260821.log`).
 
 See [troubleshooting](troubleshooting.md) when something isn't behaving.

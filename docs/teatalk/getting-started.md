@@ -24,7 +24,8 @@ The mic and its sensitivity are a **shared hub setting**, not a TeaTalk setting 
 
 1. Go to **Home → General → Audio capture**.
 2. Choose your capture device.
-3. Watch the level meter as you talk. The bar should jump when you speak and sit still when you're quiet. If it's twitchy when you're silent, or flat when you talk, see [voice detection](troubleshooting.md#voice-detection) — but the defaults are fine for most mics.
+3. TeaTalk uses its built-in neural speech detection automatically. It runs on your computer and arrives with TeaTools, including when you start offline. Future detector revisions arrive with normal TeaTools updates.
+4. Watch the level meter as you talk. If it barely moves when you speak, check the selected microphone and its input volume. For detection problems, see [voice detection](troubleshooting.md#voice-detection).
 
 ## 3. Say something
 
@@ -36,7 +37,7 @@ The mic and its sensitivity are a **shared hub setting**, not a TeaTalk setting 
 4. Talk. Your words show up in the **transcript** card as they're recognized, and the translated line lands in your VRChat chatbox — you'll see it in the **chatbox output** card too.
 5. Click **Stop listening** when you're done.
 
-> **First time only:** the free local speech engine downloads a ~142 MB model before it can recognize anything. It happens automatically on your first listen and is cached forever after. Give it a moment on the very first run.
+> **First time only:** the free local speech engine downloads a ~148 MB model before it can recognize anything. It happens automatically on your first listen and is cached forever after. Give it a moment on the very first run.
 
 ## 4. Prefer to type?
 

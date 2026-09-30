@@ -1,6 +1,6 @@
 # Using TeaTools
 
-TeaTools is a VRChat companion that runs on your Windows machine and talks to VRChat over OSC. On its own it's a lightweight hub; the features come from **modules**. The one it ships with is **TeaTalk**, which turns your speech into VRChat chatbox text.
+TeaTools is a VRChat companion that runs on your Windows machine and talks to VRChat over OSC. On its own it's a lightweight hub; the features come from **modules**. Its first module is **TeaTalk**, which ships with TeaTools and turns your speech into VRChat chatbox text.
 
 ## The hub
 
@@ -14,7 +14,7 @@ Install it, connect it to VRChat, and run modules.
 
 ## TeaTalk
 
-The module TeaTools ships with — speech to chatbox, translated or transcribed, free by default.
+TeaTools' flagship first module — speech to chatbox, translated or transcribed, free by default.
 
 → **[TeaTalk docs](teatalk/README.md)** — [getting started](teatalk/getting-started.md) · [guide](teatalk/guide.md) · [settings](teatalk/settings-reference.md) · [troubleshooting](teatalk/troubleshooting.md)
 

@@ -1,6 +1,6 @@
 # TeaTalk
 
-**TeaTalk turns your speech into VRChat chatbox text** — either translated into another language, or transcribed as-is. It's the module TeaTools ships with, and it works for free with no account and no API key.
+**TeaTalk turns your speech into VRChat chatbox text** — either translated into another language, or transcribed as-is. It's TeaTools' flagship first module, and it works for free with no account and no API key.
 
 These pages are for **using** TeaTalk. If you want to build your own module against the TeaTools hub, developer/module-author docs aren't part of this public docs set yet — ask on the **[TeaTools Discord](https://discord.gg/GUdBNfXfbe)**.
 

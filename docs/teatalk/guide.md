@@ -24,10 +24,10 @@ TeaTalk separates **speech-to-text** (turning your voice into words) from **tran
 
 | Engine | Cost | Needs a key? | Notes |
 |---|---|---|---|
-| **Local Whisper** *(default)* | Free | No | Runs on your machine. Downloads a model once (~142 MB for the default **Base** size). No internet needed after that. |
+| **Local Whisper** *(default)* | Free | No | Runs on your machine. Downloads a model once (~148 MB for the default **Base** size). No internet needed after that. |
 | **OpenAI Whisper** | Paid (your OpenAI usage) | Yes — OpenAI key | Cloud transcription. A power-user option; the free local engine is enough for most people. |
 
-For local Whisper you can pick a model size — **Tiny** (~75 MB, fastest, least accurate), **Base** (~142 MB, the default balance), or **Small** (~488 MB, most accurate, slower). Bigger = more accurate and more download.
+For local Whisper you can pick a model size — **Tiny** (~78 MB, fastest, least accurate), **Base** (~148 MB, the default balance), or **Small** (~488 MB, most accurate, slower). Bigger = more accurate and more download.
 
 ### Translation engines
 
@@ -43,7 +43,7 @@ The two free engines cover the vast majority of language pairs at zero cost. **E
 
 Choose **OpenRouter LLM** as the translation engine in Settings and a small config section appears:
 
-- **API key** — your OpenRouter key. It's masked in the UI and stored encrypted on disk (Windows DPAPI).
+- **API key** — your OpenRouter key. It's masked in the UI and stored encrypted on disk (Windows DPAPI), or as plain text when Windows can't encrypt it — the [settings reference](settings-reference.md#notes-on-storage) covers when that happens.
 - **Model** — defaults to `openai/gpt-4o-mini`. The model box suggests options fetched from OpenRouter (voice-capable models are marked "Recommended"), but you can type any model id. Leave it blank to fall back to the default.
 - **Temperature** — defaults to `0.3`. Lower is more literal; higher is more creative.
 - **Base URL** — defaults to OpenRouter's endpoint. Leave it blank unless you're pointing at a compatible proxy.
@@ -62,7 +62,7 @@ The translation is always kept in full; if the combined text is too long for VRC
 You can also:
 
 - **Show a typing indicator** (on by default) — VRChat shows the "typing…" bubble while TeaTalk is preparing a line.
-- **Turn on Live captions** (off by default) — your words appear in the chatbox while you speak, and the finished line settles in the same bubble when you stop. Early text is a best guess and can change. Captions only ever go to the chatbox, so the toggle is unavailable while Send to chatbox is off — and changing it while listening briefly pauses transcription.
+- **Live captions** (on by default) — your own words, from your own mic, appear in the chatbox while you speak, and the finished line settles in the same bubble when you stop. Early text is a best guess and can change. If you'd rather only the finished line was sent, turn **Live captions** off in TeaTalk's settings, in the Chatbox group with the options above. Captions only ever go to the chatbox, so the toggle is unavailable while Send to chatbox is off — and changing it while listening briefly pauses transcription.
 - **Turn the chatbox off** entirely — TeaTalk still recognizes and translates (you'll see it in the app), but nothing is sent to VRChat.
 
 ## Mute behavior
@@ -71,10 +71,12 @@ This controls whether TeaTalk keeps working while you're **muted in VRChat**. It
 
 | Setting | What happens while you're muted in VRChat |
 |---|---|
-| **Pause transcribing** *(default)* | Stops transcribing while your VRChat mic is muted. Resumes when you unmute. Muted means muted. |
+| **Pause transcribing** *(default)* | Holds a spoken line that begins while your VRChat mic is muted. After TeaTools has connected to VRChat at least once in this session, it also holds a line that begins while it cannot confirm your mute state. A later line sends when it begins with a known, unmuted state. |
 | **Ignore mute** | TeaTalk keeps transcribing and sending regardless of your VRChat mute state. |
 
-Whether a spoken line counts as muted is decided at the moment you **start** speaking: a line you began while unmuted still sends even if you mute before it finishes (so push-to-talk works naturally), and a line you began while muted is dropped even if you unmute mid-sentence.
+With **Pause transcribing**, whether a spoken line is held is decided at the moment you **start** speaking: a line you began while unmuted still sends even if you mute before it finishes (so push-to-talk works naturally), and a line you began while muted is held even if you unmute mid-sentence. A line that began while your mute state was genuinely unknown — a brief VRChat connection hiccup, most commonly — is also held. After TeaTools has connected to VRChat at least once in this session, that case shows the persistent **“Mute state unknown — paused to be safe”** warning with a **Check OSC** action. TeaTalk automatically rechecks a temporarily unavailable mute reading while VRChat remains discoverable; if VRChat's OSC service disappears, it keeps spoken lines held until discovery returns.
+
+TeaTalk does not show a separate on-screen notice for every spoken line it holds when it knows you are muted. Final spoken lines record the hold reason in the log; held Live captions do not currently record a per-clause reason. The on-screen warning is for an unavailable mute reading, not a claim that you are muted.
 
 Typed messages always send either way — muting your mic never blocks typing.
 

@@ -18,7 +18,7 @@ Before your text is sent to *any* translation service, TeaTalk **masks out URLs 
 
 ## Speech-to-text — stays local by default
 
-- **Local Whisper (the default)** runs entirely on your machine. Your audio never leaves your PC. It downloads a model file once (~142 MB) and then works offline.
+- **Local Whisper (the default)** runs entirely on your machine. Your audio never leaves your PC. It downloads a model file once (~148 MB) and then works offline.
 - **OpenAI Whisper** is an optional bring-your-own-key upgrade. If you choose it, your **audio** is sent to OpenAI for transcription. It's off unless you enter an OpenAI key and select it.
 
 ## Ambient listening — opt-in, off by default
@@ -31,9 +31,9 @@ Your own microphone also only captures after you press **Start listening** — n
 
 TeaTools does **not** send usage or behavioral telemetry. The only optional uploads are diagnostic ones — crash reports, and problem reports you send yourself — and they are **opt-in**: on first run you're asked once, and declining (or never being asked) means everything stays **local-only**. No account or identifier is attached to an upload, but diagnostic uploads (crash reports and problem reports) may include file paths from your PC in logs and error messages. You can change the choice any time on **Home → About**.
 
-## Your API keys — encrypted on disk
+## Your API keys — encrypted on disk when Windows can
 
-If you enter an OpenRouter or OpenAI key, it's stored **encrypted at rest using Windows DPAPI**, tied to your Windows user account, and masked in the UI. (Outside a normal Windows setup, where DPAPI isn't available, keys fall back to plain text — not a concern on ordinary Windows.)
+If you enter an OpenRouter or OpenAI key, it's stored **encrypted at rest using Windows DPAPI**, tied to your Windows user account, and masked in the UI. When Windows can't do that encryption, TeaTools saves the key as plain text rather than lose it — and that isn't limited to unusual setups, it can happen on an ordinary Windows PC. Either way the file never leaves your PC, and the key itself only ever goes to the provider you chose; a plain-text key just isn't protected from anything else on the machine that can read your files. In `%APPDATA%\TeaTools\logs`, TeaTools records which way a key ended up stored. There's one log file per day, named with its date — `teatools20260821.log`, for example — so open the newest and search it for `TeaTalk API key storage:`; the phrase sits mid-line after the timestamp, not at the start of the line. It says what happened to your key once per run, and never contains the key itself. Nothing in the app shows you — the log is the only place it's stated.
 
 ## In one line
 
