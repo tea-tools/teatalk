@@ -9,6 +9,7 @@ Install it, connect it to VRChat, and run modules.
 | If you want to… | Read |
 |---|---|
 | Install, connect to VRChat, and enable your first module | [Getting started](getting-started.md) |
+| Install an update or move from a portable copy | [Updating TeaTools](updating.md) |
 | Understand the Home screen — appearance, audio, ambient, OSC, modules, privacy | [The hub](the-hub.md) |
 | Fix the app not starting, OSC not connecting, or the mic | [Troubleshooting](troubleshooting.md) |
 

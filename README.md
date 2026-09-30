@@ -37,11 +37,13 @@ The local speech-recognition path needs no account or API key. Enable TeaTalk, s
 
 ## Download
 
-**[Download TeaTools v0.1.0-beta.1 for Windows x64](https://github.com/tea-tools/teatalk/releases/download/v0.1.0-beta.1/TeaTools-beta.zip)** — signed portable ZIP, 84.85 MB. [Release notes](https://github.com/tea-tools/teatalk/releases/tag/v0.1.0-beta.1).
+**[Download TeaTools v0.1.0-beta.2 for Windows x64](https://github.com/tea-tools/teatalk/releases/download/v0.1.0-beta.2/TeaTools-win-Setup.exe)** — digitally signed installer. [Release notes](https://github.com/tea-tools/teatalk/releases/tag/v0.1.0-beta.2).
 
-1. Download and unzip anywhere (your Desktop is fine).
-2. Close an older running copy, then run TeaTools.App.exe. No installation is needed. This portable build is updated by downloading and extracting a newer release.
+1. Download **TeaTools-win-Setup.exe**.
+2. Close an older running copy, then run the installer.
 3. In VRChat, enable OSC: **Action Menu (R) → Options → OSC → Enabled.** TeaTalk finds VRChat automatically once OSC is on.
+
+The installed app checks for new releases and asks before downloading and installing an update. Choose **Install and restart** to update, or **Not now** to keep using your current version. See [Updating TeaTools](docs/updating.md).
 
 > **First launch:** a new signed build can still receive a Windows reputation warning. Download only from the official release page and check the publisher before deciding whether to run it.
 

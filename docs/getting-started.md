@@ -6,8 +6,8 @@ TeaTools is a Windows app that sits between your microphone and VRChat and gives
 
 TeaTools ships as a self-contained Windows build — you don't need to install .NET separately.
 
-1. Unzip the TeaTools folder anywhere.
-2. Run `TeaTools.App.exe`.
+1. Download the signed [TeaTools v0.1.0-beta.2 installer for Windows x64](https://github.com/tea-tools/teatalk/releases/download/v0.1.0-beta.2/TeaTools-win-Setup.exe).
+2. Close any running copy of TeaTools, then run `TeaTools-win-Setup.exe`.
 3. The app opens its window and also places an icon in your **system tray** — right-click it for quick actions and to quit. By default, closing the window (✕) quits TeaTools; turn on **Minimize to system tray** (Home → General → System) if you'd rather closing hide it to the tray instead. See [the hub reference](the-hub.md#under-the-hood) for details.
 
 TeaTools is **single-instance**: launching it again just focuses the copy that's already running, so you can't accidentally run two.
@@ -39,7 +39,7 @@ Any module that listens to your voice uses **one** shared microphone, configured
 
 ## Where TeaTools keeps its files
 
-Everything lives under `%APPDATA%\TeaTools\`:
+TeaTools keeps its saved settings, logs and downloaded models under `%APPDATA%\TeaTools\`:
 
 | Path | What's there |
 |---|---|
@@ -51,5 +51,6 @@ Everything lives under `%APPDATA%\TeaTools\`:
 
 ## Next
 
+- **[Updating TeaTools](updating.md)** — install an offered update or move from an older portable copy.
 - **[The hub reference](the-hub.md)** — the Home screen tab by tab: appearance, audio, ambient listening, OSC, modules, and privacy/telemetry.
 - **[Troubleshooting](troubleshooting.md)** — the app won't start, OSC won't connect, where to find logs.

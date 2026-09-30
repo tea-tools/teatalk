@@ -7,13 +7,13 @@ Hub-level problems. For issues specific to speech and the chatbox, see [TeaTalk 
 - **It may already be running.** TeaTools is single-instance and lives in the **system tray** — check there before launching again. A second launch just focuses the running copy.
 - **Check the log.** TeaTools records startup in `%APPDATA%\TeaTools\logs` — one file per day, named with its date, like `teatools20260821.log`. If the window never appears, the tail of the newest one usually says why.
 
-## Windows says "Windows protected your PC" when I run TeaTools.App.exe
+## Windows shows a warning when I run the installer
 
-**Expected — this build isn't code-signed.** TeaTools isn't code-signed yet, so Windows SmartScreen doesn't recognize it and shows this warning on first run. Click **More info**, then **Run anyway**. Signed builds are planned for a future release; until then, this warning is normal for every TeaTools download, not a sign anything is wrong with the copy you got.
+The beta installer is digitally signed. If Windows shows a warning, check that you downloaded `TeaTools-win-Setup.exe` from the [official release](https://github.com/tea-tools/teatalk/releases/tag/v0.1.0-beta.2). You can inspect its signature by right-clicking the file and opening **Properties → Digital Signatures**.
 
 ## My antivirus warns that TeaTools "wants webcam access"
 
-**It's a false positive — TeaTools has no camera code at all.** Some antivirus webcam-guards hook the OS *capture-device* path and can't tell a microphone apart from a camera, so when TeaTools detects your **microphone** on launch, the guard mislabels it as a "webcam" request. TeaTools never touches your camera (Windows' own privacy settings will confirm no camera use). It's safe to allow. Being an unsigned alpha makes antivirus heuristics extra jumpy here; code-signing later will quiet it down.
+Some antivirus tools may label microphone access as a webcam request. Check Windows privacy settings to see which device was accessed. If you are unsure about a warning, share its wording when reporting the problem.
 
 ## TeaTools doesn't see VRChat / OSC won't connect
 
@@ -47,7 +47,7 @@ This is the accessibility opt-out for the dark-theme contrast problem a bright w
 
 - Modules ship **disabled** — enable them on the **Modules** tab.
 - If a module shows as failed, it's isolated by design — the hub keeps running. Check the day's log file for the reason.
-- There's no public catalog of third-party modules to install yet in this alpha — only the modules that ship with TeaTools are available to enable.
+- There's no public catalog of third-party modules to install yet in this beta — only the modules that ship with TeaTools are available to enable.
 
 ## My microphone isn't being heard
 
