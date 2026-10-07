@@ -6,7 +6,7 @@ TeaTools is a Windows app that sits between your microphone and VRChat and gives
 
 TeaTools ships as a self-contained Windows build — you don't need to install .NET separately.
 
-1. Download the signed [TeaTools v0.1.0-beta.2 installer for Windows x64](https://github.com/tea-tools/teatalk/releases/download/v0.1.0-beta.2/TeaTools-win-Setup.exe).
+1. Download the signed [TeaTools v0.1.0-beta.3 installer for Windows x64](https://github.com/tea-tools/teatalk/releases/download/v0.1.0-beta.3/TeaTools-win-Setup.exe).
 2. Close any running copy of TeaTools, then run `TeaTools-win-Setup.exe`.
 3. The app opens its window and also places an icon in your **system tray** — right-click it for quick actions and to quit. By default, closing the window (✕) quits TeaTools; turn on **Minimize to system tray** (Home → General → System) if you'd rather closing hide it to the tray instead. See [the hub reference](the-hub.md#under-the-hood) for details.
 

@@ -9,7 +9,7 @@ Hub-level problems. For issues specific to speech and the chatbox, see [TeaTalk 
 
 ## Windows shows a warning when I run the installer
 
-The beta installer is digitally signed. If Windows shows a warning, check that you downloaded `TeaTools-win-Setup.exe` from the [official release](https://github.com/tea-tools/teatalk/releases/tag/v0.1.0-beta.2). You can inspect its signature by right-clicking the file and opening **Properties → Digital Signatures**.
+The beta installer is digitally signed. If Windows shows a warning, check that you downloaded `TeaTools-win-Setup.exe` from the [official release](https://github.com/tea-tools/teatalk/releases/tag/v0.1.0-beta.3). You can inspect its signature by right-clicking the file and opening **Properties → Digital Signatures**.
 
 ## My antivirus warns that TeaTools "wants webcam access"
 

@@ -37,7 +37,7 @@ The local speech-recognition path needs no account or API key. Enable TeaTalk, s
 
 ## Download
 
-**[Download TeaTools v0.1.0-beta.2 for Windows x64](https://github.com/tea-tools/teatalk/releases/download/v0.1.0-beta.2/TeaTools-win-Setup.exe)** — digitally signed installer. [Release notes](https://github.com/tea-tools/teatalk/releases/tag/v0.1.0-beta.2).
+**[Download TeaTools v0.1.0-beta.3 for Windows x64](https://github.com/tea-tools/teatalk/releases/download/v0.1.0-beta.3/TeaTools-win-Setup.exe)** — digitally signed installer. [Release notes](https://github.com/tea-tools/teatalk/releases/tag/v0.1.0-beta.3).
 
 1. Download **TeaTools-win-Setup.exe**.
 2. Close an older running copy, then run the installer.

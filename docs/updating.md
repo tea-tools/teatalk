@@ -14,7 +14,7 @@ If the update check or download fails, you can continue using your current versi
 ## Move from an older portable copy
 
 1. Close the running portable copy of TeaTools.
-2. Download the signed [TeaTools v0.1.0-beta.2 installer for Windows x64](https://github.com/tea-tools/teatalk/releases/download/v0.1.0-beta.2/TeaTools-win-Setup.exe).
+2. Download the signed [TeaTools v0.1.0-beta.3 installer for Windows x64](https://github.com/tea-tools/teatalk/releases/download/v0.1.0-beta.3/TeaTools-win-Setup.exe).
 3. Run `TeaTools-win-Setup.exe`.
 4. Use the installed copy for future sessions.
 

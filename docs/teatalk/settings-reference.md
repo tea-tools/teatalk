@@ -42,7 +42,7 @@ For guidance on *when* to use these, see the [user guide](guide.md).
 | OpenAI Whisper API key | *(empty)* | Your OpenAI key. Masked; normally stored encrypted (Windows DPAPI) — see [Notes on storage](#notes-on-storage) for when it isn't. Only used by the OpenAI Whisper engine. |
 | OpenAI Live Transcribe API key *(in the "OpenAI platform key" block at the foot of Advanced)* | *(empty)* | A separate OpenAI key, used only by the OpenAI Live Transcribe engine — billed at $0.017 per minute of audio actually sent, higher than OpenAI Whisper's per-minute rates, for lower latency. Masked; stored the same way as the key above. Visible regardless of which speech engine is currently selected, so you can set it up before switching. |
 
-> **TeaTools selects the local Whisper backend automatically** — a discrete Vulkan GPU where one is available, an integrated GPU where that is the only option, and the CPU engine where no usable Vulkan GPU is present. There is no setting for this.
+> **TeaTools selects the local Whisper backend automatically.** On PCs without AVX, AVX2, FMA3 or F16C support, it uses a compatible CPU engine for speech detection and Local Whisper, even if Vulkan was requested. Otherwise, automatic selection prefers a usable discrete Vulkan GPU, then an integrated GPU, then the CPU. There is no in-app control for this; configuration overrides are listed below.
 >
 > **The startup log names the backend in use.** TeaTools writes a single `STT backend:` line identifying the backend and device it selected, and states the reason whenever it requested the GPU and fell back to the CPU. GPU acceleration has been confirmed on real hardware, but still depends on your hardware and drivers — check that line to confirm what your machine is using.
 
