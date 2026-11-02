@@ -2,11 +2,16 @@
 
 TeaTools is a Windows app that sits between your microphone and VRChat and gives your modules a clean, shared line to VRChat over OSC. This page gets the hub installed, connected, and running one module.
 
+## Requirements
+
+- **Windows 10 version 2004 (build 19041) or later**, or Windows 11. Earlier builds are not supported: the VRChat ambient-audio capture needs 2004 at minimum, and on an older build that feature reports itself unavailable rather than working.
+- VRChat with OSC enabled (see below).
+
 ## Install & run
 
 TeaTools ships as a self-contained Windows build — you don't need to install .NET separately.
 
-1. Download the signed [TeaTools v0.1.0-beta.3 installer for Windows x64](https://github.com/tea-tools/teatalk/releases/download/v0.1.0-beta.3/TeaTools-win-Setup.exe).
+1. Download the signed [TeaTools v0.1.0-beta.4 installer for Windows x64](https://github.com/tea-tools/teatalk/releases/download/v0.1.0-beta.4/TeaTools-win-Setup.exe).
 2. Close any running copy of TeaTools, then run `TeaTools-win-Setup.exe`.
 3. The app opens its window and also places an icon in your **system tray** — right-click it for quick actions and to quit. By default, closing the window (✕) quits TeaTools; turn on **Minimize to system tray** (Home → General → System) if you'd rather closing hide it to the tray instead. See [the hub reference](the-hub.md#under-the-hood) for details.
 
